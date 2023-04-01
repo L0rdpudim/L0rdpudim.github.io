@@ -111,7 +111,7 @@ ul.horizontal{
     --body-bg: white;
     --body-color: black;
     --ulbg: rgb(255, 255, 255);
-    --ulcolor: rgb(255, 255, 255);
+    --ulcolor: rgb(255, 136, 0);
     --ulbordera: rgb(255, 255, 255);
     --ulbghover: rgb(221, 221, 221);
 }
@@ -120,9 +120,9 @@ ul.horizontal{
     --body-bg: black;
     --body-color: rgb(255, 255, 255);
     --ulbg: rgb(26, 26, 26);
-    --ulcolor: rgb(18, 200, 224);
+    --ulcolor: rgb(255, 136, 0);
     --ulbordera: rgb(26, 26, 26);
-    --ulbghover: rgb(245, 0, 0);
+    --ulbghover: rgb((26, 26, 26);
 }
 
 
