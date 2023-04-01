@@ -78,7 +78,7 @@ ul.horizontal{
 
 .horizontal li a:hover{
     background-color: var(--ulbghover);
-    color: rgb(255, 136, 0);
+    color: var(--colorhover);
     border-radius: 5px;
     border-bottom: 5px solid var(--ulbordera);
     transition: 0.3s;
@@ -112,17 +112,19 @@ ul.horizontal{
     --body-color: black;
     --ulbg: rgb(255, 255, 255);
     --ulcolor: rgb(255, 136, 0);
-    --ulbordera: rgb(255, 255, 255);
+    --ulbordera: rgb(255, 136, 0);
     --ulbghover: rgb(221, 221, 221);
+    --colorhover: rgb(255, 136, 0)
 }
 
 .dark-mode:root{
     --body-bg: black;
     --body-color: rgb(255, 255, 255);
     --ulbg: rgb(26, 26, 26);
-    --ulcolor: rgb(255, 136, 0);
-    --ulbordera: rgb(26, 26, 26);
+    --ulcolor: rgb(0, 137, 179);
+    --ulbordera: rgb(0, 137, 179);
     --ulbghover: rgb((26, 26, 26);
+    --colorhover: rgb(0, 137, 179)
 }
 
 
