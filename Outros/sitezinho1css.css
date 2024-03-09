@@ -1,0 +1,319 @@
+*{
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--body-bg);
+    color: var(--body-color);
+}
+
+.principal{
+    background-image: var(--principalbg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logoprincipal{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    padding-top: 20vh;
+    left: 20vw;
+}
+.logoprincipal img{
+    width: 60vw;
+}
+
+.botoes{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 10vh;
+    padding-left: 5vh;
+    position: relative;
+    text-align: center;
+}
+
+.botoes img{
+    height: 100px;
+    width: 100px;
+    opacity: 0.7;
+}
+
+.botoes img:hover{
+    opacity: 1;
+}
+
+ul.horizontal{              
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--ulbg);
+    top: 0;
+    position: fixed;
+    width: 100%; 
+    z-index: 10;   
+    border-radius: 10px;       
+}
+
+
+.horizontal li{
+    float: left;
+}
+
+
+.horizontal li a{
+    display: block;
+    color: var(--ulcolor);
+    text-align: center;
+    padding: 16px 20px;
+    text-decoration: none;
+    height: 25px;
+    font-size: 20px;
+    border-bottom: 5px solid var(--ulbg);
+    border-radius: 40px;
+    background-color: var(--ulsub);
+}
+
+
+.horizontal li a:hover{
+    background-color: var(--ulbghover);
+    color: var(--colorhover);
+    border-radius: 5px;
+    border-bottom: 5px solid var(--ulbordera);
+    transition: 0.3s;
+    font-size: 24px;
+}
+
+.horizontal li a img{
+    height: 25px;
+}
+
+.horizontal li select{
+    width: 100%;
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 15px 0;
+    color: #000000;
+    font-size: 20px;
+    outline: none;
+    text-align: center;
+    
+}
+
+.horizontal li select:hover{
+    color: rgb(255, 136, 0);
+}
+
+:root{
+    --body-bg: white;
+    --body-color: black;
+    --ulbg: rgb(255, 255, 255);
+    --ulcolor: rgb(255, 136, 0);
+    --ulbordera: rgb(255, 136, 0);
+    --ulbghover: rgb(221, 221, 221);
+    --colorhover: rgb(255, 136, 0);
+    --principalbg: url("imagens site/DoradoDia.jpg");
+    --darkmode: url("imagens site/ModoClaro.png");
+    --bgdarkmodehover: rgb(221, 221, 221);
+}
+
+.dark-mode:root{
+    --body-bg: black;
+    --body-color: rgb(255, 255, 255);
+    --ulbg: rgb(26, 26, 26);
+    --ulcolor: rgb(0, 137, 179);
+    --ulbordera: rgb(0, 137, 179);
+    --ulbghover: rgb(26, 26, 26);
+    --colorhover: rgb(0, 137, 179);
+    --principalbg: url("imagens site/mapanoite.png");
+    --darkmode: url("imagens site/ModoEscuro.png");
+    --bgdarkmodehover: rgb(41, 41, 41);
+}
+
+#switch{
+    all: unset;
+    display:inline-block;
+    background-image: var(--darkmode);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+#darkmode:hover{
+    background-color: var(--bgdarkmodehover);
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    border-radius: 25px;
+}
+
+#suporteid{
+    float: right;
+}
+
+#minhacontaid{
+    float: right;
+}
+
+#minhacontaid img{
+    height: 20px;
+    width: 20px;
+}
+
+#minhacontaid:hover{
+    color: rgb(255, 136, 0);
+}
+
+#logoid{
+    background-image: url("imagens site/OverwatchLogo.png");
+    background-size: 60px;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 60px;
+    margin-top: 6px;
+}
+
+#logoid img{
+    height: 50px;   
+    margin-top: 5px;
+}
+
+#logoid2{
+    background-image: url("https://logodownload.org/wp-content/uploads/2018/02/blizzard-logo.png");
+    background-size: cover;
+    height: 25px;
+    width: 90px;
+
+}
+
+#logoid2 img{
+    height: 55px;
+    margin-top: -14px;
+}
+
+#logoid2:hover{
+    border-bottom: 5px solid rgb(0, 137, 179);
+    transition: 0.3s;
+}
+
+.custom-select {
+    position: relative;
+    font-family: 'Antonio', sans-serif;
+}
+
+.custom-select select {
+    display: block; 
+    background-color: #f0f0f0;
+}
+
+
+.horizontal li select option a:hover{
+    background-color: #e2e2e2;
+    color: rgb(255, 136, 0);
+}
+
+.horizontal li select option{
+    background-color: #f0f0f0;
+    outline: none;
+}
+
+h1{
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(255, 136, 0);
+}
+
+.novidades{
+    background-image: url(https://www.pcclean.io/wp-content/gallery/overwatch-hd-wallpapers/Overwatch-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    display: table;
+    top: 97vh;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.novidadestitulo{   
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.novidades2{
+    display: table-cell;
+    vertical-align: middle;
+    height: 600px;
+    width: 20%;
+    margin: 2%;
+    display: inline-block;
+}
+
+.novidades2 img{
+    height: 220px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.imagemtexto{
+    color: #ffffff;
+    font-family: 'Rubik', sans-serif;
+    font-size: 23px;
+}
+
+.contatos {
+    background-image: url(https://wallpapercave.com/wp/wp2076373.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    display: table;
+    top: calc(97vh + 850px);
+    text-align: center;
+}
+
+.contatostitulo{
+    font-size: 60px;
+    color: #ffffff;
+}
+
+.contatos2{
+    display: table-cell;
+    vertical-align: middle;
+    height: 500px;
+    width: 100%;
+    margin: 50px;
+    display: inline-block;
+    display: table;
+    margin-left: 0px;
+   
+}
+
+.contatos2 img{
+    height: 125px;
+    width: 125px;
+    opacity: 0.7;
+}
+
+.contatos2 img:hover{
+    opacity: 1;
+}
+
+.logocontato{
+    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
+}
